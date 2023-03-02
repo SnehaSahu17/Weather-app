@@ -1,9 +1,8 @@
 import "./App.css";
 import TopButtons from "./components/TopButtons";
 import Inputs from "./components/Inputs";
-import TimeAndLocation from "./components/TimeandLocation";
-import TemperatureAndDetails from "./components/TemperatureandDetails";
-import Forecast from "./components/Forecast";
+import TimeandLocation from "./components/TimeandLocation";
+import TemperatureandDetails from "./components/TemperatureandDetails";
 import getFormattedWeatherData from "./services/WeatherService";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -49,11 +48,8 @@ function App() {
 
       {weather && (
         <div>
-          <TimeAndLocation weather={weather} />
-          <TemperatureAndDetails weather={weather} />
-
-          <Forecast title="hourly forecast" items={weather.hourly} />
-          <Forecast title="daily forecast" items={weather.daily} />
+          <TimeandLocation weather={weather} />
+          <TemperatureandDetails weather={weather} />
         </div>
       )}
 

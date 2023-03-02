@@ -1,7 +1,7 @@
 import React from "react";
 import { formatToLocalTime } from "../services/WeatherService";
 
-function TimeAndLocation({ weather: { dt, timezone, name, country } }) {
+function TimeandLocation({ weather: { dt, timezone, name, country } }) {
   return (
     <div>
       <div className="flex items-center justify-center my-6">
@@ -17,4 +17,4 @@ function TimeAndLocation({ weather: { dt, timezone, name, country } }) {
   );
 }
 
-export default TimeAndLocation;
+export default TimeandLocation;
