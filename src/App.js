@@ -1,6 +1,6 @@
 import "./App.css";
 import TopButtons from "./components/TopButtons";
-import Inputs from "./components/Inputs";
+import Inputs from "./components/inputs";
 import TimeandLocation from "./components/TimeandLocation";
 import TemperatureandDetails from "./components/TemperatureandDetails";
 import getFormattedWeatherData from "./services/WeatherService";
