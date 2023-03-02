@@ -40,21 +40,22 @@ function App() {
   };
 
   return (
-    <div
-      className={`mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br  h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}
-    >
-      <TopButtons setQuery={setQuery} />
-      <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
+    <div className=" w-full h-screen flex ">
+      <div
+    className={`my-auto mx-auto max-w-screen-md py-5 px-32 bg-gradient-to-br  shadow-xl shadow-gray-400 ${formatBackground()}`}
+  >
+    <TopButtons setQuery={setQuery} />
+    <Inputs setQuery={setQuery} units={units} setUnits={setUnits} />
 
-      {weather && (
-        <div>
-          <TimeandLocation weather={weather} />
-          <TemperatureandDetails weather={weather} />
-        </div>
-      )}
+    {weather && (
+      <div>
+        <TimeandLocation weather={weather} />
+        <TemperatureandDetails weather={weather} />
+      </div>
+    )}
 
-      <ToastContainer autoClose={5000} theme="colored" newestOnTop={true} />
-    </div>
+    <ToastContainer autoClose={3000} theme="colored" newestOnTop={true} />
+  </div></div>
   );
 }
 
